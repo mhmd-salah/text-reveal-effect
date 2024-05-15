@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  font-weight: 200;
+  letter-spacing: -.05em;
+  background-color: #161616;
+  color: white;
+}
+
+header{
+  position: relative;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+p{
+  margin-bottom: 4rem;
+  font-size: clamp(20px,5vw,40px);
+  padding: 0 5%;
+}
+
+span{
+  opacity: .1;
+}
+#bottom{
+  margin-bottom: 100vh;
+}
