@@ -19,8 +19,16 @@ pargraphs.forEach(pargraph => {
     pargraph.innerHTML = htmlString;
 });
 spans = [...document.querySelectorAll("span")];
-let i = 0;
 window.onscroll = function () {
-    spans[i].style.opacity = "1";
-    i++;
+    revealSpans();
 };
+let i = 0;
+function revealSpans() {
+    i = scrollY;
+    for (let i = 0; i < scrollY; i++) {
+        spans[i].style.opacity = "1";
+        if (scrollY > spans.length) {
+            return;
+        }
+    }
+}
