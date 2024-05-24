@@ -27,6 +27,7 @@ p{
 
 span{
   opacity: .1;
+  text-shadow: 1px 1px 14px white;
 }
 #bottom{
   margin-bottom: 100vh;

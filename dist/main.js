@@ -28,7 +28,7 @@ function revealSpans() {
     for (let i = 0; i < scrollY; i++) {
         spans[i].style.opacity = "1";
         if (scrollY > spans.length) {
-            return;
+            break;
         }
     }
 }
