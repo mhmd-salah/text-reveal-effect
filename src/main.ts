@@ -19,9 +19,9 @@ pargraphs.forEach(pargraph => {
 });
 
 spans = [...document.querySelectorAll("span")] as HTMLSpanElement[];
+let i = 0;
 
-  let i = 0;
-setInterval(() => {
-  spans[i].style.opacity = "1";
-  i = i + 1;
-},100)
+window.onscroll = function () {
+  spans[i].style.opacity="1"
+  i++
+};
