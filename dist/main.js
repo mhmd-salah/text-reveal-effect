@@ -22,11 +22,10 @@ spans = [...document.querySelectorAll("span")];
 window.onscroll = function () {
     revealSpans();
 };
-let i = 0;
 function revealSpans() {
-    i = scrollY;
     for (let i = 0; i < scrollY; i++) {
         spans[i].style.opacity = "1";
+        spans[i].className = "active";
         if (scrollY > spans.length) {
             break;
         }
