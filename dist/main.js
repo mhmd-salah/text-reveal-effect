@@ -18,3 +18,9 @@ pargraphs.forEach(pargraph => {
     }
     pargraph.innerHTML = htmlString;
 });
+spans = [...document.querySelectorAll("span")];
+let i = 0;
+setInterval(() => {
+    spans[i].style.opacity = "1";
+    i = i + 1;
+}, 100);
